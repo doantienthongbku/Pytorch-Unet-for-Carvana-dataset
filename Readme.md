@@ -10,13 +10,13 @@ The original paper by Olaf Ronneberger, Philipp Fischer, Thomas Brox: https://ar
 
 I changed the U-net structure a little by replacing ReLU with GELU
 
-My model has $17,267,393$ parameters, and $138,93$ GB mult-adds
+My model has 17,267,393 parameters, and 138,93 GB mult-adds
 
 ## Training
 
 I use adamW instead of SGD or adam optimizer
 
-I training with $10\ epochs$, $batch\_size = 4$, resize image to $(572, 572, 3)$. Learning rate start from $1e-4$. I use 2 learning rate scheduler are ExponentialLR with $gamma = 0.9$ and MultiStepLR with $gamma = 0.1$ and $milestones=[4,8]$
+I training with 10 epochs, batch_size = 4, resize image to (572, 572, 3). Learning rate start from 1e-4. I use 2 learning rate scheduler are ExponentialLR with gamma = 0.9 and MultiStepLR with gamma = 0.1 and milestones=[4,8]
 
 
 ## Note at GPU
